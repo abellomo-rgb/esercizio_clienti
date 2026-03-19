@@ -3,7 +3,7 @@ import json
 with open ("clienti.json", "r", encoding="utf-8") as f:
     dati = json.load(f)
 
-clienti = dati['dati']
+clienti = dati
 
 # Aggiungere il nuovo cliente PRIMA di ordinare
 nuovo_cliente = {
@@ -34,3 +34,4 @@ def cliente_piu_ricco(lista):
     return max(lista, key = lambda x:x["patrimonio"])
     
 cliente_piu_ricco(clienti_sorted)
+print(cliente_piu_ricco[0])

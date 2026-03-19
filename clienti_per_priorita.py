@@ -18,3 +18,8 @@ clienti_sorted = sort_casereccio(clienti, key="priorita")
 
 for persona in clienti_sorted:
     print(f"{persona['nome']} {persona['cognome']} - Priorita: {persona['priorita']}")
+
+
+    ##cliente piu ricco
+
+    ##vendite

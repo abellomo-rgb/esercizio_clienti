@@ -3,7 +3,7 @@ import json  # ← Era "mport", manca la "i"
 with open ("clienti.json", "r", encoding="utf-8") as f:
     dati = json.load(f)
 
-clienti = dati
+clienti = dati["dati"]
 
 def sort_casereccio(items, key="priorita"):
     for i in range(len(items)):

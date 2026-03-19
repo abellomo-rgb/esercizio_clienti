@@ -33,4 +33,17 @@ clienti_sorted = sort_casereccio(clienti, key="priorita")
 def cliente_piu_ricco(lista):
     return max(lista, key = lambda x:x["patrimonio"])
     
-cliente_piu_ricco(clienti_sorted)
+cliente_piu_ricco(clienti_sorted)               #NON FUNZIONA NULLA
+
+def vendita_oggetto(lista,valore_oggetto, id_cliente):
+    for elem in lista:
+        returned_element=None
+        if elem["progressivo"]== id_cliente:
+            elem["patrimonio"]=elem["patrimonio"]- valore_oggetto
+            returned_element=elem
+    return returned_element
+
+id_cliente=0
+valore_oggetto=5000
+
+vecchio_cliente = None

@@ -1,2 +1,3 @@
-# esercizio_clienti
-Esercizio
+## NON FUNZIONA NULLA
+
+non va niente
